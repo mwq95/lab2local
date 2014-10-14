@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE struts PUBLIC "-//Apache Software Foundation//DTD Struts Configuration 2.1//EN" "http://struts.apache.org/dtds/struts-2.1.dtd">
+<struts>
+<constant name="struts.devMode" value = "true"/>
+<constant name="struts.i18n.encoding" value="GBK"/>
+
+<package name="login" extends="struts-default" namespace="/login">
+	<action name="login" class="exp2.LoginAction" method="login">
+		<result name="success">/loginsuccess.jsp</result>
+		<result name="error">/loginfailed.jsp</result>
+	</action>
+	
+</package>
+
+</struts>    
